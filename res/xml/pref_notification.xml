@@ -1,0 +1,43 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_status_bar_notification"
+        android:title="@string/pref_status_bar_notification"
+         />
+
+    <!-- NOTE: These preferences will be enabled only when the checkbox above is checked. -->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:dependency="pref_status_bar_notification"
+        android:key="pref_start_on_boot"
+        android:title="@string/pref_start_on_boot" 
+        />
+    
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:dependency="pref_status_bar_notification"
+        android:key="pref_show_ip"
+        android:title="@string/pref_show_ip" 
+         />
+    
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:dependency="pref_status_bar_notification"
+        android:key="pref_show_link_speed"
+        android:title="@string/pref_show_link_speed"
+         />
+    
+    <ListPreference
+        android:key="pref_tap_option"
+        android:dependency="pref_status_bar_notification"
+        android:title="@string/pref_tap_option"
+        android:entries="@array/tap_options"
+        android:entryValues="@array/tap_options_values"
+        android:defaultValue="app"
+         
+        />
+    
+  
+
+</PreferenceScreen>

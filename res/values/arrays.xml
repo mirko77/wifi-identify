@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tap_options">
+       <item>Open application settings</item>
+       <item>Open Wifi settings</item>
+    </string-array>
+    
+   
+    <string-array name="tap_options_values">
+       <item>app</item>
+       <item>wifi</item>
+    </string-array>
+
+</resources>
