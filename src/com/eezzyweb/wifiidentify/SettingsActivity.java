@@ -43,6 +43,7 @@ public class SettingsActivity extends PreferenceActivity implements OnSharedPref
 	private static final String KEY_START_ON_BOOT = "pref_start_on_boot";
 	private static final String KEY_SHOW_IP = "pref_show_ip";
 	private static final String KEY_SHOW_LINK_SPEED = "pref_show_link_speed";
+	private static final String KEY_SHOW_SIGNAL_STRENGTH = "pref_show_signal_strength";
 	private static final String KEY_TAP_OPTION = "pref_tap_option";
 	public static final int ID = 77;
 
@@ -178,12 +179,10 @@ public class SettingsActivity extends PreferenceActivity implements OnSharedPref
 		}
 
 		if (key.equals(KEY_START_ON_BOOT)) {
-
 			Preference connectionPref = findPreference(key);
-
 		}
 
-		if (key.equals(KEY_SHOW_IP) || key.equals(KEY_SHOW_LINK_SPEED) || key.equals(KEY_TAP_OPTION)) {
+		if (key.equals(KEY_SHOW_IP) || key.equals(KEY_SHOW_LINK_SPEED) || key.equals(KEY_TAP_OPTION) || key.equals(KEY_SHOW_SIGNAL_STRENGTH)) {
 			ToggleNotify.onNotify(this);
 		}
 

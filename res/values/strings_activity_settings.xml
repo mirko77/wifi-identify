@@ -1,11 +1,5 @@
 <resources>
-
     <string name="title_activity_settings">Wifi Identify</string>
-
     <!-- Strings related to Settings -->
-
     <string name="pref_status_bar_notification">Show notification</string>
-    <string name="pref_start_on_boot">Start on boot</string>
-    <string name="pref_header_notifications">Notification</string>
-
 </resources>
